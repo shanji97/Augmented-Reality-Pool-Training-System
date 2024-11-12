@@ -31,10 +31,11 @@
 \newcommand{\VpisnaStevilka}{63220478} % vpisna številka
 \newcommand{\StudijskiProgram}{Multimedija, MAG} % Študijski program/smer
 \newcommand{\NaslovBivalisca}{Lendavske gorice 409a, 9220 Lendava, Slovenija} % kaniddatov naslov
-\newcommand{\SLONaslov}{Sistem za igranje namizne igre Osmica v obogateni resničnosti po ameriških pravilih} % naslov dela v slovenščini
-\newcommand{\ENGNaslov}{Augmented Reality System for Playing Eight-Ball Pool with American Rules} % naslov dela v angleščini
+\newcommand{\SLONaslov}{Sistem za igranje namizne igre Osmica v obogateni resničnosti po ameriških pravilih s pomočjo
+očal Meta Quest 3 } % naslov dela v slovenščini
+\newcommand{\ENGNaslov}{Augmented Reality System for Playing Eight-Ball Pool with American Rules
+with the help of Meta Quest 3 glasses} % naslov dela v angleščini
 %%%%%%%%%%%%%%%%%%%%%%%%%% Konec izpolnjevanja %%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \newcommand{\Kandidat}{\ImeKandidata~\PriimekKandidata}
 \noindent
@@ -86,9 +87,6 @@ Elektronski naslov: matevz.pesek@fri.uni-lj.si
 %
 \hfill Podpis mentorja: \hspace{180px} \\ Podpis kandidata/kandidatke:    
 
-
-
-
 \clearpage
 \section*{PREDLOG TEME MAGISTRSKEGA DELA}
 
@@ -100,32 +98,87 @@ angleško: Computer Science and Informatics, Computer Graphics, Augmented Realit
 
 \section{Ključne besede}
 
-slovensko: obogatena resničnost,  \\
-angleško:
+slovensko: obogatena resničnost, zaznava predmetov, sledenje predmetom, namizna igra \\
+angleško: augmented reality, object detection, object tracking, tabletop game
 
 
 \section{Opis teme magistrskega dela}
 
 % Navodilo (pobrišite v končnem izdelku):
-\cmnt{
-\textbf{Briši iz končnega izdelka:}
-Dolžina teme je zelo odvisna od zgoščenosti teksta in jasnosti podajanja argumentov. Zato je zelo težko predpisati natančno dolžino vsakega podpoglavja brez da bi ob tem posegali preveč v stil pisanja. Splošno vodilo naj bo, da naj bo iz teme: (i) jasno razviden problem in relevantnost problema, (ii) izpostavljene potencialne pomanjkljivosti sorodnih rešitev, (iii) novosti/prispevki naloge naj bodo jasni in v relaciji do sorodnih rešitev, (iv) jasne naj bodo pričakovane uporabljene metode za razvoj vaše rešitve, evalvacijo uspešnosti in primerjavo s sorodnimi deli.
-\\
-\\
-Kljub temu v vsakem podpoglavju podajamo okvirni obseg v številu besed. Vodilo pa naj bo vseeno vsebinska kvaliteta.}
+V službi imamo v skupnih prostorih namizno igro Osmica, ki jo za sprostitev, med delovnim časom lahko igramo
+zaposleni in obiskovalci podjetja. Igramo po ameriških pravilih (in barvah krogel - 7 "polnih" in 7 "praznih" ter osmico), kjer pa si
+pravila prilagajamo glede na sposobnost ter povprečnega igralnega časa, ki ponavadi igramo s trenutnimi igralci. Ne malokrat se prav tako
+zgodi, da določenemu sodelavcu nenamerno zaprem pot do razpoložljivih krogel, ki jih lahko potisne v luknje. Posledično postane igra
+nezanimiva, svoje pa doda še to, da nekih naprednih tehnik igranje ne poznamo, saj je to igranje v službi za večino edini stik z biljardom. 
+Zato bi bilo zanimivo, da bi se igra izboljšala s pomočjo tehonologije, ki bi nam pomagala pri igranju tako, da bi spremljala situacijo na
+mizim in nam vizualno pokazala, kaj je potrebno storiti, da bi bila igra bolj zanimiva in napeta. Vizualizirala bi se nam pot do 
+krogle, ki jo trenutno lahko potisnemo v luknjo, prav tako pa bi nam pokazala, kje se bo krogla odbila, 
+če bi jo potisnili v določeno smer in pod določenim kotom. \\Aplikcija v obogateni resničnosti, s pomočjo
+očal za navidezno in razširjeno resničnost, Meta Quest 3 bi nam pomagala za treniranje veščin za 
+ameriška pravila osmice, predvsem na začetniškem nivoju igranja namizne igre. Gre se predvsem za implementacijo
+mobilne rešitve za prepoznavo lokacij krogel, palice in poze dlani na resnični mizi in realnočasovni izris informacij
+za zanimivejšo igro z manjhnimi podpornimi elementi ter primerjavo izdelanega sistema s trenutno dostopnimi sistemi,
+ki delujejo v dvo-dimenzionalnem načinu.
+
+% \cmnt{
+% \textbf{Briši iz končnega izdelka:}
+% Dolžina teme je zelo odvisna od zgoščenosti teksta in jasnosti podajanja argumentov. Zato je zelo težko predpisati natančno dolžino vsakega podpoglavja brez da bi ob tem posegali preveč v stil pisanja. Splošno vodilo naj bo, da naj bo iz teme: (i) jasno razviden problem in relevantnost problema, (ii) izpostavljene potencialne pomanjkljivosti sorodnih rešitev, (iii) novosti/prispevki naloge naj bodo jasni in v relaciji do sorodnih rešitev, (iv) jasne naj bodo pričakovane uporabljene metode za razvoj vaše rešitve, evalvacijo uspešnosti in primerjavo s sorodnimi deli.
+% \\
+% \\
+% Kljub temu v vsakem podpoglavju podajamo okvirni obseg v številu besed. Vodilo pa naj bo vseeno vsebinska kvaliteta.}
 % V nadaljevanju opredelite izhodišča magistrskega dela in utemeljite znanstveno ali strokovno relevantnost predlagane teme.
+\newpage
 
 \textbf{Pretekle potrditve predložene teme:}\\
 Predložena tema ni bila oddana in potrjena v preteklih letih.
-% Tu ne gre za to, da bi morali pogledati vse pretekle teme, če se slučajno ujemajo z vašo. Pač pa je ta del namenjen tistim, ki letos ponovno oddajate temo, ki vam jo je KŠZ potrdila že lani.
-% v kolikor gre za temo, ki je bila že oddana v preteklem letu in je bila takrat potrjena, prosim to napišite. Prav tako napišite, če se v nečem tema razlikuje od lanske (ste kaj dodali, odvzeli).
 
+\newpage
 \subsection{Uvod in opis problema}
 
 %Navodilo:
-\cmnt{Pojasnite, kaj je problem, ki ga želite reševati, in podajte motivacijo za delo. Pri opisu motivacije se navežite na literaturo in nerešene probleme, ki jih bo naslavljala vaša magistrska naloga. Delo umestite v ožje področje dela. Okvirni obseg: ~300 besed (1/2 strani A4).}
+V službi imamo v skupnih prostorih namizno igro Osmica, ki jo za sprostitev, \textbf{med delovnim časom} lahko igramo
+zaposleni in obiskovalci podjetja. Igramo po ameriških pravilih (in barvah krogel - 7 "polnih" in 7 "praznih" ter osmico), kjer pa si
+pravila prilagajamo, glede na sposobnost ter povprečnega igralnega časa, ki ponavadi igramo s trenutnimi igralci. Ne malokrat se prav tako
+zgodi, da določenemu sodelavcu nenamerno zaprem pot do razpoložljivih krogel, ki jih lahko potisne v luknje. Posledično postane igra
+nezanimiva, svoje pa doda še to, da nekih naprednih tehnik igranje ne poznamo, saj je to igranje za večino edini stik z biljardom. 
+Zato bi bilo zanimivo, da bi se igra izboljšala s pomočjo tehonologije, ki bi nam pomagala pri igranju tako, da bi spremljala situacijo na
+mizi in nam vizualno pokazala, kaj je potrebno storiti, da bi bila igra bolj zanimiva in napeta. Vizualizirala bi se nam pot do 
+krogle, ki jo trenutno lahko potisnemo v luknjo, prav tako pa bi nam pokazala, kje se bo krogla odbila, 
+če bi jo potisnili v določeno smer in pod določenim kotom.  \\
+Aplikcija v obogateni resničnosti bi nam pomagala za treniranje veščina za ameriška pravila osmice, predvsem na začetniškem nivoju igranja
+namizne igre. 
+% \cmnt{Pojasnite, kaj je problem, ki ga želite reševati, in podajte motivacijo za delo. Pri opisu motivacije se navežite na literaturo in nerešene probleme, ki jih bo naslavljala vaša magistrska naloga. Delo umestite v ožje področje dela. Okvirni obseg: ~300 besed (1/2 strani A4).}
 
 \subsection{Pregled sorodnih del}
+
+Preden sem načrtoval magistrsko delo (?!), sem predlega obstoječa dela na področju obogatene resničnosti
+za zadnjih 5 let, ki se osredotočajo na tak tip igre, pa tudi na samo področje zaznave in
+spreljanja predmetov v 2D pogledu na mizo. WenKai et al. \cite{WenKai2024} se ukvarjajo s tehnologijami za
+obdelavo barvnih fotografij mize za osmico in algoritmi za umetno zaznavo krogel s pomočjo
+globokega učenja. Predvsem me je zanimalo kako je mogoče zaznavati krogle in kako se lahko določi
+pozicija krogle. Slabost je seveda v tem, da je prisotno globoko učenje, kar za Meta
+Quest 3 ni najbolj optimalno, saj bi bilo učenje v realnem času preveč zahtevno, če ne neizvedljivo.
+Obrnil sem se na obstoječe reštive, ki deloma ponujajo že vgrajeno zaznavo objektov, kot je na primer
+Microsoft Kinect V2, sploh zato, ker si omenjeno napravo lastim in poznam druge uporabe omenjene
+kamera, med drugim globinsko zaznovo in sposobnost tro-dimenzionalnega zajemanje okolice. \\
+Sousa et al. \cite{Sousa2016} so s pomočjo projektorja in kamere Kinect V2 razvili sistem,
+ki krogle zazna, glede na kot pod katerim je palico pristavljena na kroglo, predvidi smer in kot odboja
+na mizi in napovedi projicira na mizo. Sistem deluje v realnem času, deluje ne glede na uporabljene palice,
+krogle in material mize, hkrati pa so pogoji osvetlitve okolice zahtevni, saj niso kontrolirani, tako kot je
+to pri profesionalnih turnirjih v biljardu (Ne vem kako delati "svoje komentarje": biljard ali osmicah - tu bi rabil
+narediti nek prehod). Uspešno napovedi je po ocenah avtorjev 98-odstotna, ni pa še bila preizkušena na višjih tekmovalnih nivojih
+igre, s čimer bi lahko izboljšali mehanike fizike same igre.  \\
+Kljub temu pa so pri omenjeni rešitvi pomanjkljivosti, saj sistem ne zna izračunati
+sile s katero palica udari ob belo kroglo, kot tudi pod katero pozicijo jo udari, s čimer
+dodatno izboljšamo natačnost napovedi. \\
+Čeprav je Kinect (ne glede) na različico strojne opreme dovršena tehnologija, pa jo je
+podjetje Microsoft že od leta 2010, ko je splavilo prvo različico, obravnavalo mačehovsko,
+saj za sistem Xbox 360 ni bilo dovolj iger, ki bi izkoriščale tehnologijo. Dodatna zahteva je bila
+tudi, da je bila soba, kjer je bila naprava postavljena, dovolj velika. Podobne težave so se
+se nadaljevale skozi naslednje generacije, kar je pripeljalo, do tega, da je Microsoft sistem
+ukini, podizvajalec, ki je razvil sistem pa je bil kupljen s strani Apple-a. Ta tehnologija
+delno realizirana v telefonih iPhone 12 (in novejših) modelih Pro in Pro Max. (del sistema sem tudi sam raziskal
+predmetu Interaktivnost in  oblikovanje informacij in je v obliki poročila: )  \\
 
 %Navodilo:
 \cmnt{Opišite pregled sorodnih del na ožjem področju, na katerem nameravate opravljati magistrsko nalogo. Vsako delo naj bo na kratko opisano v nekaj stavkih, besedilo pa naj poudari njegove glavne prednosti, slabosti ali posebnosti. Sklicujte se na dela, navedena v razdelku \ref{literatura} Literatura in viri. Pregled naj bo fokusiran.  Okvirni obseg: 1/2 - 2/3 strani A4.}
@@ -139,14 +192,27 @@ Predložena tema ni bila oddana in potrjena v preteklih letih.
 \subsection{Metodologija}
 
 %Navodilo:
+Za razvoj primarne aplikacije bom uporabil igralni pogon Unity 6, ki omogoča enostavno
+razvijanje igra za različne platforme, med drugim tudi za očala Meta Quest 2 / 3 (v nadaljevanju Quest 2 / 3), ki tečejo na
+operacijskem sistemu Android. Igralni pogonp podpira razvoj v programskem jeziku C\# in
+ogrodje .NET razvojni okolji pa bosta Visual Studio in Visual Studio Code. Za zaznavanje krogel
+se bo uporabljala kamera, ki se nahaja na očalih Meta Quest 2 / 3 ali pa zunanja kamera, ima možnost
+zaznavanja objektov, kot je na primer Microsoft Kinect različice 2, ki prav tako uporablja
+tehnologijo zaznavanja globine, prav tako pa je možno uporabiti C\# in .NET za razvoj. Prenos in
+obvedalava določenih podatkov bo odleženo na zuzanji program ali spletni strežnik, prav tako 
+spisan v programskem jeziku C\# in .NET ogrodju. Lahko se bodo dodali dodatni označevalci za 
+boljšo zaznavo krogel oziroma ožje okolice za orientacijo. Pri nalogi bom stremel k čim manjšem
+številu programskih in strojnh komponent, da bi bila aplikacija čim bolj preprosta za uporabo in razumevanje.
+Čeprav bo večji del razvoja namanjen aplikaciji za Quest 3, bom preučil obstoječe možnosti, za prilagoditev aplikacije za 
+Quest 2.
+ \\
 \cmnt{Na kratko opredelite metodologijo, ki jo nameravate uporabiti pri svojem delu. Metodologija vsebuje metode, ki jih nameravate uporabiti (npr. razvoj v izbranem programskem jeziku, izdelava strojne opreme itd.), postopek analize, postopek evalvacije vašega prispevka in primerjavo s sorodnimi deli.  Okvirni obseg: 1/4 - 1/3 A4 strani.}
-
 
 \subsection{Literatura in viri}
 \label{literatura}
 
 %Navodilo:
-\cmnt{Tu navedite vse vire, ki jih citirate v predlogu teme. Citiranje naj bo v skladu z znanstveno-strokovnimi standardi citiranja, na primer, \cite{Zivkovic2004}. Seznam naj vsebuje vsaj nekaj del, objavljenih v zadnjih petih letih. Prednostno naj bodo navedene objave s konferenc, revij, oziroma drugih priznanih virov.}
+% \cmnt{Tu navedite vse vire, ki jih citirate v predlogu teme. Citiranje naj bo v skladu z znanstveno-strokovnimi standardi citiranja, na primer, \cite{Zivkovic2004}. Seznam naj vsebuje vsaj nekaj del, objavljenih v zadnjih petih letih. Prednostno naj bodo navedene objave s konferenc, revij, oziroma drugih priznanih virov.}
 
 \renewcommand\refname{}
 \vspace{-50px}
