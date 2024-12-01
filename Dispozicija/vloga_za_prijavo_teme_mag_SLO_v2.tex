@@ -31,10 +31,8 @@
 \newcommand{\VpisnaStevilka}{63220478} % vpisna številka
 \newcommand{\StudijskiProgram}{Multimedija, MAG} % Študijski program/smer
 \newcommand{\NaslovBivalisca}{Lendavske gorice 409a, 9220 Lendava, Slovenija} % kaniddatov naslov
-\newcommand{\SLONaslov}{Sistem za igranje namizne igre Osmica v obogateni resničnosti po ameriških pravilih s pomočjo
-očal Meta Quest 3 } % naslov dela v slovenščini
-\newcommand{\ENGNaslov}{Augmented Reality System for Playing Eight-Ball Pool with American Rules
-with the help of Meta Quest 3 glasses} % naslov dela v angleščini
+\newcommand{\SLONaslov}{Sistem za vadbo biljard igre osmica v obogateni resničnosti} % naslov dela v slovenščini
+\newcommand{\ENGNaslov}{Augmented Reality Training System for Eight-Ball Pool} % naslov dela v angleščini
 %%%%%%%%%%%%%%%%%%%%%%%%%% Konec izpolnjevanja %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\Kandidat}{\ImeKandidata~\PriimekKandidata}
@@ -66,9 +64,7 @@ Tema je bila že potrjena lani in je ponovno vložena: {\bf \textit{NE} }
 
 Izjavljam, da je spodaj navedeni mentor predlog teme pregledal in odobril, ter da se z oddajo predloga strinja.
 
-Magistrsko delo nameravam pisati v slovenščini. % In case you would like to write the thesis in English, comment this line out, and use the following template to explain your request:
-%Komisijo zaprošam, da odobri pisanje magistrskega dela v angleškem jeziku z obrazložitvijo ... .
-
+Magistrsko delo nameravam pisati v slovenščini. 
 Za mentorja predlagam:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Izpolni kandidat! %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,15 +81,15 @@ Elektronski naslov: matevz.pesek@fri.uni-lj.si
 \hfill V Ljubljani, \today. \\
 %V Ljubljani, dne …………………………
 %
-\hfill Podpis mentorja: \hspace{180px} \\ Podpis kandidata/kandidatke:    
+%\hfill Podpis mentorja: \hspace{180px} \\ Podpis kandidata/kandidatke:    
 
 \clearpage
-\section*{PREDLOG TEME MAGISTRSKEGA DELA}
+\section{PREDLOG TEME MAGISTRSKEGA DELA}
 
 \section{Področje magistrskega dela}
 
-slovensko: računalništvo in informatika, računalniška grafika, razširnjena resničnost, optično zaznavanje in sledenje predmetov, namizne igre\\
-angleško: Computer Science and Informatics, Computer Graphics, Augmented Reality, Optical Object Detection and Tracking, Tabletop Games
+slovensko: računalniška grafika, razširjena resničnost\\
+angleško: Computer Graphics, Augmented Reality
 
 \section{Ključne besede}
 
@@ -102,128 +98,61 @@ angleško: augmented reality, object detection, object tracking, tabletop game
 
 \section{Opis teme magistrskega dela}
 
-V službi imamo v skupnih prostorih namizno igro Osmica, ki jo za sprostitev, med delovnim časom lahko igramo
-zaposleni in obiskovalci podjetja. Igramo po ameriških pravilih (in barvah krogel - 7 "polnih" in 7 "praznih" ter osmico), kjer pa si
-pravila prilagajamo glede na sposobnost ter povprečnega igralnega časa, ki ponavadi igramo s trenutnimi igralci. Nemalokrat se prav tako
-zgodi, da določenemu sodelavcu nenamerno zaprem pot do razpoložljivih krogel, ki jih lahko potisne v luknje. Posledično postane igra
-nezanimiva, svoje pa doda še to, da nekih naprednih tehnik igranje ne poznamo, saj je to igranje v službi za večino edini stik z biljardom. 
-Zato bi bilo zanimivo, da bi se igra izboljšala s pomočjo tehonologije, ki bi nam pomagala pri igranju tako, da bi spremljala situacijo na
-mizim in nam vizualno pokazala, kaj je potrebno storiti, da bi bila igra bolj zanimiva in napeta. Vizualizirala bi se nam pot do 
-krogle, ki jo trenutno lahko potisnemo v luknjo, prav tako pa bi nam pokazala, kje se bo krogla odbila, 
-če bi jo potisnili v določeno smer in pod določenim kotom. \\Aplikcija v obogateni resničnosti, s pomočjo
-očal za navidezno in razširjeno resničnost Meta Quest 3, bi nam pomagala za treniranje veščin za 
-ameriška pravila osmice, predvsem na začetniškem nivoju igranja namizne igre. Gre se predvsem za implementacijo
-mobilne rešitve za prepoznavo lokacij krogel, palice in poze dlani na resnični mizi in realnočasovni izris informacij
-za zanimivejšo igro z manjhnimi podpornimi elementi ter primerjavo izdelanega sistema s trenutno dostopnimi sistemi,
-ki delujejo v dvo-dimenzionalnem načinu.
-
-% Navodilo (pobrišite v končnem izdelku):
-% \cmnt{
-% \textbf{Briši iz končnega izdelka:}
-% Dolžina teme je zelo odvisna od zgoščenosti teksta in jasnosti podajanja argumentov. Zato je zelo težko predpisati natančno dolžino vsakega podpoglavja brez da bi ob tem posegali preveč v stil pisanja. Splošno vodilo naj bo, da naj bo iz teme: (i) jasno razviden problem in relevantnost problema, (ii) izpostavljene potencialne pomanjkljivosti sorodnih rešitev, (iii) novosti/prispevki naloge naj bodo jasni in v relaciji do sorodnih rešitev, (iv) jasne naj bodo pričakovane uporabljene metode za razvoj vaše rešitve, evalvacijo uspešnosti in primerjavo s sorodnimi deli.
-% \\
-% \\
-% Kljub temu v vsakem podpoglavju podajamo okvirni obseg v številu besed. Vodilo pa naj bo vseeno vsebinska kvaliteta.}
-% V nadaljevanju opredelite izhodišča magistrskega dela in utemeljite znanstveno ali strokovno relevantnost predlagane teme.
-
-\newpage
-
 \textbf{Pretekle potrditve predložene teme:}\\
 Predložena tema ni bila oddana in potrjena v preteklih letih.
 
-\newpage
 \subsection{Uvod in opis problema}
-\cmnt{Tole mi ni ravno jasno. A razširim samo na več besed?}
 %Navodilo:
-V službi imamo v skupnih prostorih namizno igro Osmica, ki jo za sprostitev, \textbf{med delovnim časom} lahko igramo
-zaposleni in obiskovalci podjetja. Igramo po ameriških pravilih (in barvah krogel - 7 "polnih" in 7 "praznih" ter osmico), kjer pa si
-pravila prilagajamo, glede na sposobnost ter povprečnega igralnega časa, ki ponavadi igramo s trenutnimi igralci. Ne malokrat se prav tako
-zgodi, da določenemu sodelavcu nenamerno zaprem pot do razpoložljivih krogel, ki jih lahko potisne v luknje. Posledično postane igra
-nezanimiva, svoje pa doda še to, da nekih naprednih tehnik igranje ne poznamo, saj je to igranje za večino edini stik z biljardom. 
-Zato bi bilo zanimivo, da bi se igra izboljšala s pomočjo tehonologije, ki bi nam pomagala pri igranju tako, da bi spremljala situacijo na
-mizi in nam vizualno pokazala, kaj je potrebno storiti, da bi bila igra bolj zanimiva in napeta. Vizualizirala bi se nam pot do 
-krogle, ki jo trenutno lahko potisnemo v luknjo, prav tako pa bi nam pokazala, kje se bo krogla odbila, 
-če bi jo potisnili v določeno smer in pod določenim kotom.  \\
-Aplikcija v obogateni resničnosti bi nam pomagala za treniranje veščina za ameriška pravila osmice, predvsem na začetniškem nivoju igranja
-namizne igre. 
+Nekateri uporabniki si želijo ustvariti umetne, računalniško ustvarjene svetove v navidezni resničnosti (angl. ``virtual reality''), predvsem za izkušnje pri videoigrah, simulacijah in izobraževalnih vsebinah \cite{Qingtian2024}. Za slednje se pogosto uporablja zlasti obogatena resničnost (angl. ``augmented reality''), ki vključuje navidezne objekte v realni svet in jih omogoča videti ter upravljati s pomočjo posebne strojne opreme, kot so očala z integriranimi kamerami.
+Motivacija za uporabo teh tehnologij izhaja iz njihove uporabnosti in prilagodljivosti. Uporabnik lahko izvaja popolno simulacijo sveta, kjer brez tveganja preizkuša različne scenarije, kot na primer za različna usposabljanja ali načrtovanja izdelkov. Obogatena resničnost uporabnikom omogoča vizualizacijo in manipulacijo z digitalnimi vsebinami, kot so arhitekturne rešitve, navidezne dirkalne steze ali analiza igre šaha, kjer sistem ponudi predloge za naslednje poteze in jih tudi vizualizira. Prav tako zagotavlja izpis metapodatkov, kot sta hitrost avtomobilčkov ali število figur na igralni površini.\\
+Na področju izobraževanja pa nam obogatena resničnost lahko pomaga pri učenju kompleksnih spretnosti, kot so igranje klavirja s pomočjo aplikacije PianoVision \cite{McKenzie2022PianoVision}, uvajanje zaposlenega pri sestavljanju avtodoma ali pa celo rehabilitacija po poškodbah z uporabo videoiger (angl. ``exergaming'') \cite{Chow2023Exergaming}, ki uporabljajo obstoječe okolje. Te tehnologije ne olajšajo dostop le do znanja, temveč tudi spodbujajo kreativnost, fizično aktivnost in uporabniku prilagojeno učenje.\\
+Tako izobraževanje se lahko aplicira tudi na druga področja, mora pa se v splošnem poskrbeti za zaznavo objektov, kar med drugim vključuje prilagajanje na različne svetlobne razmere, izbiro algoritmov glede na želeno hitrost, kvaliteto in učinkovitost za pridobitve značilk. Rešitve se s trenutnim nivojem tehnologije uporabljajo tudi za prikaz načrtovanih poti realnih objektov. Naprava lahko sledi premikajočim se objektom, kot so na primer različne žoge ali krogle za biljard. Prav na slednje se bomo tudi v tem magistrskem delu osredotočili.
+\\Sistemi za pomoč pri vadbi biljard igre osmica že obstajajo, a so vezani na starejše naprave, ki poleg tega, da so redke, tudi nikoli niso bile zares priljubljene \cite{Sousa2016} in zahtevajo veliko odprtega fizičnega prostora, da lahko svoje delo opravijo učinkovito. Glede na razvoj tehnologije in priljubljenost očal za navidezno in obogateno resničnost Meta Quest 3 lahko predpostavimo, da je možno razviti identičen sistem, ki je bolj priročen glede razpoložljivega prostora, hkrati pa je sposoben napovedovati igro biljarda z minimalno enako točnostjo, ko to počno rešitve razvite za druge komercialno dostopne senzorje, ter nam služiti kot pomočnik za prikazovanje različnih tehnik, hkrati pa je prikaz razširjen na tretjo dimenzijo. Upoštevati je mogoče tudi kot pod katerimi udarimo igralno kroglo, da lahko še določimo zasuk krogle, na podlagi katerega lahko dodatno napovemo naslednji igralni položaj. 
+Natančnost napovedi sistema bomo preverili s statističnimi metodami, glede na realne scenarije. Za to bomo izvedli simulacije in analizirali odstopanja med napovedanimi in dejanskimi položaji krogel. Ključni kazalniki bodo povprečna napaka napovedi, standardni odklon in robustnost sistema pri različnih pogojih (svetlobne razmere, vrtenje krogle).
+
 % \cmnt{Pojasnite, kaj je problem, ki ga želite reševati, in podajte motivacijo za delo. Pri opisu motivacije se navežite na literaturo in nerešene probleme, ki jih bo naslavljala vaša magistrska naloga. Delo umestite v ožje področje dela. Okvirni obseg: ~300 besed (1/2 strani A4).}
 
 \subsection{Pregled sorodnih del}
-
-Preden sem načrtoval magistrsko delo, sem predlega obstoječa dela na področju obogatene resničnosti
-za zadnjih 5 let, ki se osredotočajo na tak tip igre, pa tudi na samo področje zaznave in
-spreljanja predmetov v 2D pogledu na mizo. WenKai et al. \cite{WenKai2024} se ukvarjajo s tehnologijami za
-obdelavo barvnih fotografij mize za Osmico in algoritmi za umetno zaznavo krogel s pomočjo
-globokega učenja. Predvsem me je zanimalo kako je mogoče zaznavati krogle, in kako se lahko določi
-pozicija krogle. Slabost je seveda v tem, da je prisotno globoko učenje, kar za Meta
-Quest 3 ni najbolj optimalno, saj bi bilo učenje v realnem času preveč zahtevno, če ne neizvedljivo.
-Obrnil sem se na obstoječe reštive, ki deloma ponujajo že vgrajeno zaznavo objektov, kot je na primer
-Microsoft Kinect V2 (v nadaljevanju Kinect V2), sploh zato, ker si omenjeno napravo lastim in poznam druge uporabe omenjene
-kamere. Med drugim je to globinsko zaznavanje in sposobnost tro-dimenzionalnega zajemanja okolice. \\
+Področje obogatene resničnosti se ukvarja s številnimi izzivi, ki jih je potrebno rešiti, da lahko okoli nas sploh začnemo postavljati navidezne objekte, prav tako pa je potrebno te objekte potem ustrezno prikazati.
+Macedo in Apolinário \cite{Macedo2023Occlusion} sta naredila pregled različnih člankov med Januarjem 1992 in Avgustom 2020,  kjer  ocenjujeta širok spekter pristopov različnih avtorjev, ter prihodnje usmeritve pri reševanju problema zastiranja (angl. ``occlusion'') v obogateni resničnosti. V članku omenjeni avtorji \cite{Krajancich2020Factored} obravnavajo reševanje 
+treh glavnih problemov. To so problem določanja vrstnega reda, problem rentgenskega pogleda (angl. ``X-ray vision'') in izzive, ki temeljijo na modelih z uporabo virtualnih fantomov. Problemi se naslavljajo v obliki izboljšanih zrcal znotraj strojne opreme za prikazovanje slike \cite{Krajancich2020Factored}, veliko pa je poudarka tudi na različnih tehnologijah zaslona \cite{Zhang2023AddOn}.\\
+Pri problemu napovedovanja smeri krogel, je prav tako potrebno upoštevati, da so krogle na mizi za biljard in palica za udarjanje pravi objekti. To pomeni, da sistem mora biti sposoben prepoznave pravih objektov pod različnimi svetlobnimi pogoji. WenKai et al. \cite{WenKai2024} opisujejo tehnologije za
+obdelavo barvnih fotografij mize za osmico in algoritme za zaznavo krogel s pomočjo globokega učenja. Določiti je namreč potrebno, kako bo potekala zaznava krogel in posledično kako se bo ugotovila njihova pozicija. V pristopu avtorji uporabijo globoko učenje, kar za Meta
+Quest 3 ni najbolj najbolj primerno, saj bi bila obdelava podatkov v realnem času preveč zahtevna in energijsko neučinkovita, če ne neizvedljiva zaradi omejitev same naprave.
+Med drugim, je to globinsko zaznavanje in sposobnost tro-razsežnostnega zajemanja okolice. \\
 Sousa et al. \cite{Sousa2016} so s pomočjo projektorja in kamere Kinect V2 razvili sistem,
-ki krogle zazna, glede na kot pod katerim je palico pristavljena na kroglo, predvidi smer in kot odboja
-na mizi in napovedi projicira na mizo. Sistem deluje v realnem času, ne glede na uporabljene palice,
+ki zazna položaj palice okoli krogle (v obliki dvo-razsežnostnega kroga) in predvidi smer potovanja krogle ob udarcu. Ta smer se s pomočjo projektorja izriše na mizo. Sistem deluje v realnem času, ne glede na uporabljene znamke igralne palice,
 krogle in material mize, hkrati pa so pogoji osvetlitve okolice zahtevni, saj niso kontrolirani, tako kot je
-to pri profesionalnih turnirjih v biljardu (Ne vem kako delati "svoje komentarje": biljard ali osmicah - tu bi rabil
-narediti nek prehod, ker bi raje uporabil biljard). Uspešnost napovedi je po ocenah avtorjev 98-odstotna, ni pa še bila preizkušena na višjih 
-tekmovalnih nivojihigre, s čimer bi lahko dodatno evalviral in izboljšal sistem fizike (to moram še 1x preveriti) same igre.  \\
-Kljub temu pa so pri omenjeni rešitvi pomanjkljivosti, saj sistem ne zna izračunati
-sile s katero palica udari ob belo kroglo, kot tudi pod katero pozicijo jo udari, s čimer
-dodatno izboljšamo natačnost napovedi, lahko pa s pomočjo tega izvedemo tehniko skakanja žogice, ki nam pride prav pri zapiranju nasprotnikov. \\
-Čeprav je Kinect (ne glede) na različico strojne opreme dovršena tehnologija, pa jo je
-podjetje Microsoft že od leta 2010, ko je splavilo prvo različico, obravnavalo mačehovsko,
-saj za sistem Xbox 360 ni bilo dovolj iger, ki bi izkoriščale tehnologijo. Dodatna zahteva je bila
-tudi, da je bila soba, kjer je bila naprava postavljena, dovolj velika. Podobne težave so se
-se nadaljevale skozi naslednje generacije, kar je pripeljalo, do tega, da je Microsoft sistem
-ukini, podizvajalec, ki je razvil sistem pa je bil kupljen s strani Apple-a. Ta tehnologija
-predmetu Interaktivnost in oblikovanje informacij in je v obliki poročila: \url{https://unilj-my.sharepoint.com/:b:/g/personal/ak78348_student_uni-lj_si/Ec6HjsWnBCtKnxV41PBFEY4BLBBXPTgsY_bIx2kWkt_TqQ?e=0oGZRk}. \\
+to pri profesionalnih turnirjih v biljardu. Uspešnost napovedi je po ocenah avtorjev 96-odstotna, ni pa še bila preizkušena na višjih 
+tekmovalnih nivojih igre, s čimer bi lahko dodatno evalvirali in izboljšali sistem fizike same igre. Kljub temu pa so pri omenjeni rešitvi pomanjkljivosti, saj sistem ne zna izračunati sile s katero palica udari ob belo kroglo, kot tudi pod katero pozicijo jo udari, s čimer
+dodatno lahko izboljšamo natančnost napovedi, prav tako pa s pomočjo tega izvedemo tehniko skakanja krogle, ki nam pride prav pri zapiranju nasprotnikov. \\
+Rešitve za obravnavan problem, ki temeljijo na sistemih naglavnih zaslonov (angl. ``head mounted display''), sicer že obstajajo, a so v primerjavi z modernejšimi rešitvami tehnološko zaostale \cite{Sargaana2005Collaborative}, prav tako pa je uspešnost napovedi smeri krogle le 12-odstotna, sodobnejše rešitve pa so trenutno še v stopnji pregleda pred končno oddajo \cite{Yan2024Enhancing}.
+
 
 %Navodilo:
 \cmnt{Opišite pregled sorodnih del na ožjem področju, na katerem nameravate opravljati magistrsko nalogo. Vsako delo naj bo na kratko opisano v nekaj stavkih, besedilo pa naj poudari njegove glavne prednosti, slabosti ali posebnosti. Sklicujte se na dela, navedena v razdelku \ref{literatura} Literatura in viri. Pregled naj bo fokusiran.  Okvirni obseg: 1/2 - 2/3 strani A4.}
 
 \subsection{Predvideni prispevki magistrske naloge}
-
-%Navodilo:
-% \cmnt{Opišite predvidene prispevke magistrske naloge s področja računalništva in informatike, ki so lahko strokovni ali znanstveni. Poudarite in opišite predvideni napredek ali novost vašega dela v primerjavi z obstoječim stanjem na strokovnem (ali znanstvenem) področju.  Okvirni obseg: 70 besed.}
-Predviden prispevek magistrske naloge s področja računalništva in informatike je uporaba
-tehnologij obogatene resničnosti in naprednega zaznavanja predmetov in dlani za namene 
-izobraževanja in zabave, hkrati pa posredno krepimo timski duh in socialne veščine 
-zaposlenih. S pomočjo tehnologije, ki je dostopna in enostavna za uporabo ter ne zahteva
-kompleksne postavitve sistema in njegovega vzdrževanja, se lahko tudi naredi nekaj na temo učinkovite rabe električne energije. Tako bi lahko sistem namesto s Kinectom
-V2 priključenega na zmogljivejši računalnik,uporabljali le kamero telefona iPhone Pro Max, telefona katerega drugega proizvajalca ali
-pa samo očala Meta Quest 3.
+Predviden prispevek magistrske naloge s področja multimedije so sledeči:
+\begin{itemize}
+    \item Prilagoditev sistema za vadbo biljard igre osmica za manjše število naprav, ki so modernejše, tehnološko bolj izpopolnjene ter bolje podprte s strani proizvajalca in skupnosti. Posledično lahko z manjšim številom naprav prispevamo, k manjši porabi električne energije.
+    \item Implementacija manj znanih realno-časovnih algoritmov za pridobitev značilk za razpoznavo lokacije trka, med biljard palico in kroglo, s katero bomo lahko natančneje napovedovali končno pozicijo krogel ob udarcu s palico.
+    \item Izpopolniti obstoječe programske knjižnice za zajemanje večjih količin, kot sta na primer sila udarca in zasuk krogle. Odkriti prednosti in slabosti le-teh in rezultate objaviti za izboljšanje omenjenih knjižnic.
+    \item Evalvirati sistem z različnimi fizikalni pristopi in posledično določiti stopnjo učinkovitost aplikacije v primerjavi z drugimi razpoložljivimi sistemi.
+\end{itemize}
 \subsection{Metodologija}
-
-%Navodilo:
-Za razvoj primarne aplikacije bom uporabil igralni pogon Unity 6, ki omogoča enostavno
-razvijanje igra za različne platforme, med drugim tudi za očala Meta Quest 3 (v nadaljevanju samo Quest), ki tečejo na
-operacijskem sistemu Android. Igralni pogon podpira razvoj v programskem jeziku C\# in
-ogrodje .NET, razvojni okolji pa bosta Visual Studio in Visual Studio Code. Za zaznavanje krogel
-se bo uporabljala kamera, ki se nahaja na Quest-u ali pa zunanja kamera, ki ima možnost
-zaznavanja objektov, kot je na primer Microsoft Kinect V2. Slednji prav tako uporablja
-tehnologijo zaznavanja globine, prav tako pa je možno uporabiti C\# in .NET za razvoj. Prenos in
-obvedalava določenih podatkov bo odloženo na zunanji program ali spletno aplikacijo. Slednji bo beležila tudi
-podatke o igri, ki bodo služili za izboljšanje algoritmov za napovedovanje gibanja krogel in samo držo dlani.
-Pri nalogi bom stremel k čim manjšemu številu programskih in strojnh komponent, da bi bila aplikacija čim bolj preprosta za uporabo in razumevanje.
-Čeprav bo večji del razvoja namanjen aplikaciji za Quest 3, bom preučil obstoječe možnosti, za prilagoditev aplikacije za 
-Quest 2.
- \\
-% \cmnt{Na kratko opredelite metodologijo, ki jo nameravate uporabiti pri svojem delu. Metodologija vsebuje metode, ki jih nameravate uporabiti (npr. razvoj v izbranem programskem jeziku, izdelava strojne opreme itd.), postopek analize, postopek evalvacije vašega prispevka in primerjavo s sorodnimi deli.  Okvirni obseg: 1/4 - 1/3 A4 strani.}
+Razvoj sistema za zaznavanje in sledenje predmetov bo potekal z uporabo tehnologij računalniškega vida, implementiranih v ogrodju .NET in igralnem pogonu Unity. Prvi korak bo implementacija algoritmov, ki bodo temeljili na značilkah, kot so oblika, barva in položaj objektov, ter optimizacija za delovanje v realnem času. Natančnost zaznavanja krogel in palice bo evalvirana z meritvami, kot so povprečna napaka zaznave in odzivnost v različnih svetlobnih pogojih.
+\\
+V nadaljevanju bo razvit model za simulacijo interakcij med biljardno palico in kroglami, pri čemer bomo uporabili Unity-jev fizikalni pogon za natančno napovedovanje gibanja krogel po udarcu. Model bo prilagojen za simulacijo v realnem času, pri čemer bomo analizirali natančnost napovedi glede na različne kote in sile udarca. Robustnost sistema bomo preizkusili z analizo vpliva variabilnosti pogojev, kot so spremembe svetlobnih razmer in nepredvideni premiki kamere.
+\\
+Evalvacija sistema bo izvedena s pomočjo testnih uporabnikov, pri čemer bodo uporabljene metode, kot so opazovalne študije, kjer bomo beležili uspešnost uporabnikov pri reševanju specifičnih nalog, in usmerjeni intervjuji za pridobivanje kvalitativnih povratnih informacij. Poleg tega bodo uporabniki vključeni v simulacije realnih scenarijev, kjer bomo analizirali učinkovitost sistema pri praktični uporabi. Izvedli bomo tudi primerjalno analizo z alternativnimi rešitvami, da ovrednotimo prednosti in slabosti našega sistema. Zbrane podatke bomo podprli s statistično analizo in uporabili za nadaljnjo izboljšavo sistema.
+\\
+Takšna metodologija združuje tehnično in uporabniško evalvacijo ter zagotavlja strukturiran in celovit pristop k razvoju sistema, ki združuje inovativne algoritme z robustno uporabniško izkušnjo.
 
 \subsection{Literatura in viri}
 \label{literatura}
-
-%Navodilo:
-% \cmnt{Tu navedite vse vire, ki jih citirate v predlogu teme. Citiranje naj bo v skladu z znanstveno-strokovnimi standardi citiranja, na primer, \cite{Zivkovic2004}. Seznam naj vsebuje vsaj nekaj del, objavljenih v zadnjih petih letih. Prednostno naj bodo navedene objave s konferenc, revij, oziroma drugih priznanih virov.}
-
 \renewcommand\refname{}
 \vspace{-50px}
 \bibliographystyle{elsarticle-num}
 \bibliography{./bibliografija/bibliography}
-
-
-%\bigskip
-%
-%Ljubljana, \today .
-
 \end{document}
