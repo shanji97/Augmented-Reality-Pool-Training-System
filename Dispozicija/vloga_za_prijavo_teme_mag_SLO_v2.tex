@@ -88,7 +88,7 @@ Elektronski naslov: matevz.pesek@fri.uni-lj.si
 
 \section{Področje magistrskega dela}
 
-slovensko: računalniška grafika, razširjena resničnost\\
+slovensko: računalniška grafika, obogatena resničnost\\
 angleško: Computer Graphics, Augmented Reality
 
 \section{Ključne besede}
@@ -116,11 +116,11 @@ Natančnost napovedi sistema bomo preverili s statističnimi metodami, glede na 
 Področje obogatene resničnosti se ukvarja s številnimi izzivi, ki jih je potrebno rešiti, da lahko okoli nas sploh začnemo postavljati navidezne objekte, prav tako pa je potrebno te objekte potem ustrezno prikazati.
 Macedo in Apolinário \cite{Macedo2023Occlusion} sta naredila pregled različnih člankov med Januarjem 1992 in Avgustom 2020,  kjer  ocenjujeta širok spekter pristopov različnih avtorjev, ter prihodnje usmeritve pri reševanju problema zastiranja (angl. ``occlusion'') v obogateni resničnosti. V članku omenjeni avtorji \cite{Krajancich2020Factored} obravnavajo reševanje 
 treh glavnih problemov. To so problem določanja vrstnega reda, problem rentgenskega pogleda (angl. ``X-ray vision'') in izzive, ki temeljijo na modelih z uporabo virtualnih fantomov. Problemi se naslavljajo v obliki izboljšanih zrcal znotraj strojne opreme za prikazovanje slike \cite{Krajancich2020Factored}, veliko pa je poudarka tudi na različnih tehnologijah zaslona \cite{Zhang2023AddOn}.\\
-Pri problemu napovedovanja smeri krogel, je prav tako potrebno upoštevati, da so krogle na mizi za biljard in palica za udarjanje pravi objekti. To pomeni, da sistem mora biti sposoben prepoznave pravih objektov pod različnimi svetlobnimi pogoji. WenKai et al. \cite{WenKai2024} opisujejo tehnologije za
+Pri problemu napovedovanja smeri krogel, je prav tako potrebno upoštevati, da so krogle na mizi za biljard in palica za udarjanje pravi objekti. To pomeni, da sistem mora biti sposoben prepoznave pravih objektov pod različnimi svetlobnimi pogoji. WenKai idr. \cite{WenKai2024} opisujejo tehnologije za
 obdelavo barvnih fotografij mize za osmico in algoritme za zaznavo krogel s pomočjo globokega učenja. Določiti je namreč potrebno, kako bo potekala zaznava krogel in posledično kako se bo ugotovila njihova pozicija. V pristopu avtorji uporabijo globoko učenje, kar za Meta
 Quest 3 ni najbolj najbolj primerno, saj bi bila obdelava podatkov v realnem času preveč zahtevna in energijsko neučinkovita, če ne neizvedljiva zaradi omejitev same naprave.
 Med drugim, je to globinsko zaznavanje in sposobnost tro-razsežnostnega zajemanja okolice. \\
-Sousa et al. \cite{Sousa2016} so s pomočjo projektorja in kamere Kinect V2 razvili sistem,
+Sousa idr. \cite{Sousa2016} so s pomočjo projektorja in kamere Kinect V2 razvili sistem,
 ki zazna položaj palice okoli krogle (v obliki dvo-razsežnostnega kroga) in predvidi smer potovanja krogle ob udarcu. Ta smer se s pomočjo projektorja izriše na mizo. Sistem deluje v realnem času, ne glede na uporabljene znamke igralne palice,
 krogle in material mize, hkrati pa so pogoji osvetlitve okolice zahtevni, saj niso kontrolirani, tako kot je
 to pri profesionalnih turnirjih v biljardu. Uspešnost napovedi je po ocenah avtorjev 96-odstotna, ni pa še bila preizkušena na višjih 
@@ -130,15 +130,15 @@ Rešitve za obravnavan problem, ki temeljijo na sistemih naglavnih zaslonov (ang
 
 
 %Navodilo:
-\cmnt{Opišite pregled sorodnih del na ožjem področju, na katerem nameravate opravljati magistrsko nalogo. Vsako delo naj bo na kratko opisano v nekaj stavkih, besedilo pa naj poudari njegove glavne prednosti, slabosti ali posebnosti. Sklicujte se na dela, navedena v razdelku \ref{literatura} Literatura in viri. Pregled naj bo fokusiran.  Okvirni obseg: 1/2 - 2/3 strani A4.}
+%\cmnt{Opišite pregled sorodnih del na ožjem področju, na katerem nameravate opravljati magistrsko nalogo. Vsako delo naj bo na kratko opisano v nekaj stavkih, besedilo pa naj poudari njegove glavne prednosti, slabosti ali posebnosti. Sklicujte se na dela, navedena v razdelku \ref{literatura} Literatura in viri. Pregled naj bo fokusiran.  Okvirni obseg: 1/2 - 2/3 strani A4.}
 
 \subsection{Predvideni prispevki magistrske naloge}
 Predviden prispevek magistrske naloge s področja multimedije so sledeči:
 \begin{itemize}
-    \item Prilagoditev sistema za vadbo biljard igre osmica za manjše število naprav, ki so modernejše, tehnološko bolj izpopolnjene ter bolje podprte s strani proizvajalca in skupnosti. Posledično lahko z manjšim številom naprav prispevamo, k manjši porabi električne energije.
+    \item Prilagoditev sistema za vadbo biljard igre osmica za manjše število naprav, ki so modernejše, tehnološko bolj izpopolnjene ter bolje podprte s strani proizvajalca in skupnosti. Posledično lahko z manjšim številom naprav prispevamo, k manjši porabi električne energije. Trenutno sistemi uporabljalo ločeno napravo za zajem, kot je na primer Kinect V2 in napravo za prikaz projektor. V najboljšem primeru bi tako zajem in zaznavo ter prikaz informacij izvajala samo očala Meta Quest 3. Tudi če se potrebovali Kinect V2 za zajem 
     \item Implementacija manj znanih realno-časovnih algoritmov za pridobitev značilk za razpoznavo lokacije trka, med biljard palico in kroglo, s katero bomo lahko natančneje napovedovali končno pozicijo krogel ob udarcu s palico.
     \item Izpopolniti obstoječe programske knjižnice za zajemanje večjih količin, kot sta na primer sila udarca in zasuk krogle. Odkriti prednosti in slabosti le-teh in rezultate objaviti za izboljšanje omenjenih knjižnic.
-    \item Evalvirati sistem z različnimi fizikalni pristopi in posledično določiti stopnjo učinkovitost aplikacije v primerjavi z drugimi razpoložljivimi sistemi.
+    \item Evalvirati sistem z različnimi fizikalni pristopi in posledično določiti stopnjo učinkovitost aplikacije v primerjavi z drugimi razpoložljivimi komercialnimi sistemi.
 \end{itemize}
 \subsection{Metodologija}
 Razvoj sistema za zaznavanje in sledenje predmetov bo potekal z uporabo tehnologij računalniškega vida, implementiranih v ogrodju .NET in igralnem pogonu Unity. Prvi korak bo implementacija algoritmov, ki bodo temeljili na značilkah, kot so oblika, barva in položaj objektov, ter optimizacija za delovanje v realnem času. Natančnost zaznavanja krogel in palice bo evalvirana z meritvami, kot so povprečna napaka zaznave in odzivnost v različnih svetlobnih pogojih.
