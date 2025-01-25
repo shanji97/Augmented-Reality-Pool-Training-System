@@ -1,0 +1,16 @@
+name: Developer CI/CD for testing purposes
+
+on:
+    push:
+        branches-ignore:
+            - main
+env:
+    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE}}
+jobs:
+    checkLicense:
+        name: Check for the Unity license ☑️
+        runs-on: ubuntu-latest
+        steps:
+          - name: Fail - No license ☠️
+            if: ${{ !startsWith(env.UNITY_LICENSE, '<') }}
+            run: exit 1
