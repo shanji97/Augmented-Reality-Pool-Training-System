@@ -7,7 +7,7 @@ on:
 jobs:
     build:
         name: Build AR_Pool_Application
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-lates
         steps:
             # Checkout
             - name: Checkout repository
@@ -18,7 +18,7 @@ jobs:
             - uses: actions/cache@v3
               with:
                 path: UnityProject/AR_Pool/Library
-                key: Library-${{ hashFiles('UnityProject/AR_Pool/Assets/**', 'UnityProject/AR_Pool/Packages/**', 'UnityProject/AR_Pool/ProjectSettings/**') }}
+                key: UnityProject/AR_Pool/Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
                 restore-keys: |
                     Library-
             #Build
@@ -29,8 +29,8 @@ jobs:
                 UNITY_EMAIL: ${{secrets.UNITY_EMAIL}}
                 UNITY_PASSWORD: ${{secrets.UNITY_PASSWORD}}
               with:
-                projectPath: UnityProject/AR_Pool
                 targetPlatform: Android
+                projectPath: UnityProject/AR_Pool 
 
 
 
