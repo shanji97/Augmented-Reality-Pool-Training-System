@@ -1,3 +1,4 @@
+
 name: Developer CI/CD for testing purposes
 
 on:
@@ -18,10 +19,10 @@ jobs:
             - uses: actions/cache@v3
               with:
                 path: UnityProject/AR_Pool/Library
-                key: UnityProject/AR_Pool/Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+                key: Library-${{ hashFiles('UnityProject/AR_Pool/Assets/**', 'UnityProject/AR_Pool/Packages/**', 'UnityProject/AR_Pool/ProjectSettings/**') }}
                 restore-keys: |
                     Library-
-            #Build
+            # Build
             - name: Build project
               uses: game-ci/unity-builder@v4
               env:
@@ -29,5 +30,10 @@ jobs:
                 UNITY_EMAIL: ${{secrets.UNITY_EMAIL}}
                 UNITY_PASSWORD: ${{secrets.UNITY_PASSWORD}}
               with:
+                projectPath: UnityProject/AR_Pool
                 targetPlatform: Android
-                projectPath: UnityProject/AR_Pool 
+            # Output
+            - uses: actions/upload-artifact@v3
+              with :
+                name: Build
+                path: UnityProject/AR_Pool/Build
