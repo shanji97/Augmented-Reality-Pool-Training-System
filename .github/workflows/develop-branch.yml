@@ -33,7 +33,7 @@ jobs:
                 projectPath: UnityProject/AR_Pool
                 targetPlatform: Android
             # Output
-            - uses: actions/upload-artifact@v3
+            - uses: actions/upload-artifact@v4
               with :
                 name: Build
                 path: UnityProject/AR_Pool/Build
