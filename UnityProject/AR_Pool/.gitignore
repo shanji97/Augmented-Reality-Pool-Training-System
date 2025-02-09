@@ -71,3 +71,18 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Custom files
+*.mp4
+*.avi
+*.mov
+*.webm
+
+*.mp4.meta
+*.mp4.meta.meta
+*.avi.meta
+*.avi.meta.meta
+*.mov.meta
+*.mov.meta.meta
+*.webm.meta
+*.webm.meta.meta
