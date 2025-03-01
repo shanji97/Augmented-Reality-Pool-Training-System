@@ -15,6 +15,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                 lfs: true
+
             # Create Library and Build folder automatically, since they are excluded in the .gitignore
             - name: Create Library folder
               run: mkdir -p UnityProject/AR_Pool/Library
@@ -22,12 +23,7 @@ jobs:
             # Build folder
             - name: Create Build folder
               run: mkdir -p UnityProject/AR_Pool/Build
-            
 
-            # Remove Unnecessary Video Files
-            - name: Remove Unnecessary Video Files
-              run: find UnityProject/AR_Pool/Library/PackageCache -type f -name "*.mp4" -delete || true
-      
             # Cache
             - uses: actions/cache@v3
               with:
@@ -35,11 +31,7 @@ jobs:
                 key: Library-${{ hashFiles('UnityProject/AR_Pool/Assets/**', 'UnityProject/AR_Pool/Packages/**', 'UnityProject/AR_Pool/ProjectSettings/**') }}
                 restore-keys: |
                     Library-
-            
-            # Remove Unnecessary Video Files
-            - name: Remove Unnecessary Video Files
-              run: find UnityProject/AR_Pool/Library/PackageCache -type f -name "*.mp4" -delete || true
-
+                      
             # Build
             - name: Build project
               uses: game-ci/unity-builder@v4
@@ -50,7 +42,6 @@ jobs:
               with:
                 projectPath: UnityProject/AR_Pool
                 targetPlatform: Android
-                buildOutputPath: UnityProject/AR_Pool/Build
 
             # Remove Unnecessary Video Files
             - name: Remove Unnecessary Video Files
