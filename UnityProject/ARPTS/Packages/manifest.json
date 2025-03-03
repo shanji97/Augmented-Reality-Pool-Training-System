@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.audio": "72.0.0",
     "com.meta.xr.sdk.core": "72.0.0",
     "com.meta.xr.sdk.interaction.ovr": "72.0.0",
     "com.meta.xr.sdk.platform": "72.0.0",
